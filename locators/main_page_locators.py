@@ -27,6 +27,6 @@ class MainPageLocators:
     Локаторы кнопки 'Заказать'
     """
     ORDER_BUTTON = (By.CLASS_NAME, "Button_Button__ra12g") # Кнопка "Заказать" вверху главной страницы
-    ORDER_BIG_BUTTON = (By.CLASS_NAME, "Button_Button__ra12g Button_UltraBig__UU3Lp") # Кнопка "Заказать" внизу главной страницы
+    ORDER_BIG_BUTTON = (By.CLASS_NAME, "Home_FinishButton__1_cWm") # Кнопка "Заказать" внизу главной страницы
 
-    HOME_HEADER = (By.XPATH, ".//div[text()='Самокат ']") # Заголовок "Самокат" на главной странице
+    HOME_HEADER = (By.CLASS_NAME, "Home_Header__iJKdX")  # Заголовок "Самокат" на главной странице

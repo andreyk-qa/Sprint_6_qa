@@ -10,8 +10,9 @@ class OrderPageLocators:
     SURNAME_FIELD = (By.CSS_SELECTOR, 'input[placeholder="* Фамилия"]') # Поле ввода фамилии
     ADDRESS_FIELD = (By.CSS_SELECTOR, 'input[placeholder="* Адрес: куда привезти заказ"]') # Поле ввода адреса
     METRO_FIELD = (By.CSS_SELECTOR, 'input[placeholder="* Станция метро"]') # Поле ввода станции метро
+    CHOOSE_METRO = (By.XPATH, ".//div[text()='Черкизовская']") # Выбор станции метро Черкизовская
     PHONE_NUMBER_FIELD = (By.CSS_SELECTOR, 'input[placeholder="* Телефон: на него позвонит курьер"]') # Поле ввода телефона
-    ORDER_DATE_FIELD = (By.CLASS_NAME, 'Order_MixedDatePicker__3qiay') # Поле "Когда привезти самокат"
+    ORDER_DATE_FIELD = (By.CSS_SELECTOR, 'input[placeholder="* Когда привезти самокат"]') # Поле "Когда привезти самокат"
 
     """
     Выпадающий список срока аренды
@@ -30,9 +31,8 @@ class OrderPageLocators:
     Кнопки формы заказа
     """
     NEXT_BUTTON = (By.XPATH, ".//button[text()='Далее']") # Кнопка Далее
-    ORDER_BUTTON = (By.XPATH, ".//button[text()='Заказать']") # Кнопка Заказать
+    ORDER_BUTTON = (By.XPATH, ".//button[@class= 'Button_Button__ra12g Button_Middle__1CSJM']") # Кнопка Заказать
     YES_BUTTON = (By.XPATH, ".//button[text()='Да']") # Кнопка "Да" на всплывающем окне "Хотите оформить заказ?"
-    NO_BUTTON = (By.XPATH, ".//button[text()='Нет']") # Кнопка "Нет" на всплывающем окне "Хотите оформить заказ?"
     VIEW_STATUS_BUTTON = (By.XPATH, ".//button[text()='Посмотреть статус']")  # Кнопка "Посмотреть статус" на всплывающем окне "Заказ оформлен"
 
     """
@@ -40,6 +40,7 @@ class OrderPageLocators:
     """
     LOGO_YANDEX = (By.XPATH, ".//a[@class= 'Header_LogoYandex__3TSOI']") # Логотип Яндекс
     LOGO_SCOOTER = (By.XPATH, ".//a[@class= 'Header_LogoScooter__3lsAR']") # Логотип Самокат
-    LOGO_DZEN = (By.XPATH, ".//div[@class= 'dzen-layout--desktop-base-header__logoContainer-pu dzen-layout--desktop-base-header__isMorda-2n']") # Логотип Дзен
+
+    NEWS_DZEN = (By.XPATH, ".//div[@class= 'dzen-desktop--floor-title__title-2v']") # Новости на Дзен
 
     ORDER_COMPLETED = (By.XPATH, ".//div[text()='Заказ оформлен']") # Заголовок окна успешного создания заказа

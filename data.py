@@ -49,3 +49,30 @@ class QuestionsAndAnswers:
 class Url:
 
     MAIN_PAGE_URL = 'https://qa-scooter.praktikum-services.ru/'
+
+class OrderTestData:
+
+    ORDER_SCRIPT_1 = {
+        'name': "Григорий",
+        'surname': "Кукумбер",
+        'address': "За тридевять земель",
+        'phone_number': "+7999999999",
+        'date': "01.01.2030",
+        'filling_data_function': 'filling_data_who_scooter_for_script_1',
+        'filling_rent_function': 'filling_data_for_rent_script_1',
+    }
+
+    ORDER_SCRIPT_2 = {
+        'name': "Афанасий",
+        'surname': "Известный",
+        'address': "Далеко",
+        'phone_number': "+7888888888",
+        'date': "08.15.2026",
+        'filling_data_function': 'filling_data_who_scooter_for_script_2',
+        'filling_rent_function': 'filling_data_for_rent_script_2',
+    }
+
+    ORDER_TEST_DATA = [
+        ORDER_SCRIPT_1,
+        ORDER_SCRIPT_2
+    ]

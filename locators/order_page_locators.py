@@ -31,15 +31,15 @@ class OrderPageLocators:
     Кнопки формы заказа
     """
     NEXT_BUTTON = (By.XPATH, ".//button[text()='Далее']") # Кнопка Далее
-    ORDER_BUTTON = (By.XPATH, ".//button[@class= 'Button_Button__ra12g Button_Middle__1CSJM']") # Кнопка Заказать
+    ORDER_BUTTON = (By.XPATH, ".//button[contains(@class, 'Button_Middle__') and contains(text(), 'Заказать')]")  # Кнопка Заказать
     YES_BUTTON = (By.XPATH, ".//button[text()='Да']") # Кнопка "Да" на всплывающем окне "Хотите оформить заказ?"
     VIEW_STATUS_BUTTON = (By.XPATH, ".//button[text()='Посмотреть статус']")  # Кнопка "Посмотреть статус" на всплывающем окне "Заказ оформлен"
 
     """
     Логотипы
     """
-    LOGO_YANDEX = (By.XPATH, ".//a[@class= 'Header_LogoYandex__3TSOI']") # Логотип Яндекс
-    LOGO_SCOOTER = (By.XPATH, ".//a[@class= 'Header_LogoScooter__3lsAR']") # Логотип Самокат
+    LOGO_YANDEX = (By.XPATH, ".//a[contains(@class, 'Header_LogoYandex__')]")  # Логотип Яндекс
+    LOGO_SCOOTER = (By.XPATH, ".//a[contains(@class, 'Header_LogoScooter__')]") # Логотип Самокат
 
     NEWS_DZEN = (By.XPATH, ".//div[@class= 'dzen-desktop--floor-title__title-2v']") # Новости на Дзен
 
